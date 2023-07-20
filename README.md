@@ -31,7 +31,7 @@ The main idea behind analysing the Belgian housing market, is to grasp a better 
 > - XGBoost
 
 ## Dataset
-The data colelcted was extracted from a Belgian real estate platform ([Immoweb.be](https://www.immoweb.be/en/search/house/for-sale)), which conglomerates many rental and selling units from real estate agencies.
+The data collected was extracted from a Belgian real estate platform ([Immoweb.be](https://www.immoweb.be/en/search/house/for-sale)), which conglomerates many rental and selling units from real estate agencies.
 
 ## Descriptive Analysis
 Based on the extracted data, an more in depth review had been made, which can be found in the `Data_Exploration` folder. 
