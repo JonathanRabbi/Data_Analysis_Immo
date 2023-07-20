@@ -1,15 +1,18 @@
 # Analysing the Belgian Housing Market
 
-<img src="https://cdn1.iconfinder.com/data/icons/real-estate-set-1/512/3-1024.png" width="200" height="200" />
+<img src="https://cdn1.iconfinder.com/data/icons/real-estate-set-1/512/3-1024.png" width="200" class ="center" height="200" />
 
 <h2 id="table-of-contents"> :book: Table of Contents</h2>
 <details open="open">
   <summary>Table of Contents</summary>
 <ol>
-<li><a href="Goal of the Analysis"> ➤ Goal of The Analysis</a></li>
-<li><a href="Requirements"> ➤ Requirements</a></li>
-<li><a href="Dataset"> ➤ Dataset</a></li>
-<li><a href="Example of Usage"> ➤ Example of Usage</a></li>
+<li><a href="#Goal of the Analysis"> ➤ Goal of The Analysis</a></li>
+<li><a href="#Requirements"> ➤ Requirements</a></li>
+<li><a href="#Dataset"> ➤ Dataset</a></li>
+<li><a href="#Descriptive Analysis"> ➤ Descriptive Analysis</a></li>
+<li><a href="#Prediction Modeling"> ➤ Prediction Modeling</a></li>
+<li><a href="#Example of Usage"> ➤ Example of Usage</a></li>
+<li><a href="#Time Schedule"> ➤ Time Schedule</a></li>
 </ol>
 </details>
 
@@ -28,7 +31,13 @@ The main idea behind analysing the Belgian housing market, is to grasp a better 
 > - XGBoost
 
 ## Dataset
+The data colelcted was extracted from a Belgian real estate platform ([Immoweb.be](https://www.immoweb.be/en/search/house/for-sale)), which conglomerates many rental and selling units from real estate agencies.
 
+## Descriptive Analysis
+Based on the extracted data, an more in depth review had been made, which can be found in the `Data_Exploration` folder. 
+
+## Prediction Modeling
+To investigate whether the price of houses is influenced by sevral features, several regression models had been used. The variables  with the strongest correlation with the dependant variable *Price* were (*Bedrooms, Bathrooms, Toilets, Surface of Plots*). Hence, these features had been tested to see to what extent can these elements predict the changes in house prices.
 
 ## Example of Usage
 __1. Download the dataset:__
@@ -41,6 +50,12 @@ Download the Pipeline_Regression file which can be found in the `src` folder. He
 __3. Running the script:__
 Lastly, you can run the script by running the main.py file, to view the results.
 
+## Time Schedule
+
+This project took place between:
+
+- Data Exploration: 10/07/2023-14/07/2023
+- Prediction Modeling: 17/07/2023-20/07/2023
 
 
 
