@@ -32,7 +32,7 @@ def evaluate_xgboost_regression(data_file_path):
     mse = mean_squared_error(y_test, y_pred)
     rmse = np.sqrt(mse)
     #print('MSE: %0.2f' % mse)
-    print('RMSE_trained_model: %0.2f' % rmse)
+    print('RMSE_trained_model: $%0.2f' % rmse)
 
     '''Cross Validation is used to evaluate how well the model performs with unseen data. 
         Here the rmse is calculated for different subsets and how consistent it is'''
@@ -68,7 +68,7 @@ def evaluate_decisiontree_regression(data_file_path):
 
     mse=mean_squared_error(y_test,y_pred)
     rmse=np.sqrt(mse)
-    print('Decision Tree-RMSE_trained_model: %0.2f' % rmse)
+    print('Decision Tree-RMSE_trained_model: $%0.2f' % rmse)
 
     cross_val_score(reg_tree,X_train, y_train, cv=10)
 
@@ -93,7 +93,8 @@ def evaluate_linear_regression(data_file_path):
 
     mse=mean_squared_error(y_test,y_pred)
     rmse=np.sqrt(mse)
-    print('Linear Regression-RMSE_trained_model: %0.2f' % rmse)
+
+    print('Linear Regression-RMSE_trained_model: $%0.2f' % rmse)
 
     cross_val_score(reg_linear,X_train, y_train, cv=10)
 
@@ -103,7 +104,7 @@ def evaluate_linear_regression(data_file_path):
 
 
 if __name__ == "__main__":
-    data_file_path = '/Users/jonathanrabbi/Desktop/Data_Analysis_Immo/CSV_Files/Cat_House_details.csv'
+    data_file_path = '/Users/jonathanrabbi/Desktop/Data_Analysis_Immo/CSV_File_Accomodation/Cat_House_details.csv'
     evaluate_xgboost_regression(data_file_path)
     evaluate_decisiontree_regression(data_file_path)
     evaluate_linear_regression(data_file_path)
