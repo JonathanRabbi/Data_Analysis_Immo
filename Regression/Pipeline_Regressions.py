@@ -9,6 +9,8 @@ from sklearn.tree import DecisionTreeRegressor
 from sklearn.model_selection import cross_val_score
 from sklearn.linear_model import LinearRegression
 
+
+
 def evaluate_xgboost_regression(data_file_path):
     # create dataframe from the csv file that is opened
     df = pd.read_csv(data_file_path)
@@ -19,7 +21,7 @@ def evaluate_xgboost_regression(data_file_path):
     y = df_House['Price']
 
     # Splitting the data to train and test sets 
-    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3,random_state=0)
+    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3,random_state=10)
 
     # creating and training the XGB regressor. Here the regression model has been fitted on training data
     xg_reg = XGBRegressor()
@@ -40,14 +42,14 @@ def evaluate_xgboost_regression(data_file_path):
     model = XGBRegressor(objective='reg:squarederror')
     scores = cross_val_score(model, X, y, scoring="neg_mean_squared_error", cv=10)
     rmse_cv = np.sqrt(-scores)
-    print('XGBoost-Cross-validated RMSE: %0.2f' % rmse_cv.mean())
+    #print('XGBoost-Cross-validated RMSE: %0.2f' % rmse_cv.mean())
 
     # displaying the scores (R^2) of the model from trained data and test set.
     print('XGBoost-Training set R^2 score: %0.2f' % xg_reg.score(X_train, y_train))
     print('XGBoost-Testing set R^2 score: %0.2f' % xg_reg.score(X_test, y_test))
 
 
-
+''' The following function creates the prediction analysis based on Decision Trees'''
 def evaluate_decisiontree_regression(data_file_path):
     df=pd.read_csv(data_file_path)
 
@@ -55,12 +57,12 @@ def evaluate_decisiontree_regression(data_file_path):
     X = df_House[['Bedrooms', 'Bathrooms', 'Toilets', 'Surface of the plot','Building_encoded']]
     y = df_House['Price']
 
-    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3,random_state=0)
+    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3,random_state=10)
 
     reg_tree=DecisionTreeRegressor(criterion='squared_error',
-                          max_depth=10,
-                          min_samples_split=10,
-                          )
+                        max_depth=10,
+                        min_samples_split=10,
+                        )
     
     reg_tree.fit(X_train,y_train)
 
@@ -76,7 +78,7 @@ def evaluate_decisiontree_regression(data_file_path):
     print('Decision Tree-Testing set R^2 score: %0.2f' % reg_tree.score(X_test, y_test))
 
 
-
+''' The following function creates the prediction analysis based on Linear Regression'''
 def evaluate_linear_regression(data_file_path):
     df=pd.read_csv(data_file_path)
 
@@ -84,7 +86,7 @@ def evaluate_linear_regression(data_file_path):
     X = df_House[['Bedrooms', 'Bathrooms', 'Toilets', 'Surface of the plot','Building_encoded']]
     y = df_House['Price']
 
-    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3,random_state=0)
+    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3,random_state=10)
 
     reg_linear= LinearRegression()
     reg_linear.fit(X_train,y_train)
@@ -102,9 +104,7 @@ def evaluate_linear_regression(data_file_path):
     print('Linear Regression -Testing set R^2 score: %0.2f' % reg_linear.score(X_test, y_test))
 
 
-
-if __name__ == "__main__":
-    data_file_path = '/Users/jonathanrabbi/Desktop/Data_Analysis_Immo/CSV_File_Accomodation/Cat_House_details.csv'
-    evaluate_xgboost_regression(data_file_path)
-    evaluate_decisiontree_regression(data_file_path)
-    evaluate_linear_regression(data_file_path)
+data_file_path = '/Users/jonathanrabbi/Desktop/Data_Analysis_Immo/CSV_File_Accomodation/Cat_House_details.csv'
+evaluate_xgboost_regression(data_file_path)
+evaluate_decisiontree_regression(data_file_path)
+evaluate_linear_regression(data_file_path)
