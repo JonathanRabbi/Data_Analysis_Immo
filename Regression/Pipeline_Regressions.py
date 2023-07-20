@@ -104,7 +104,7 @@ def evaluate_linear_regression(data_file_path):
     print('Linear Regression -Testing set R^2 score: %0.2f' % reg_linear.score(X_test, y_test))
 
 
-data_file_path = '/Users/jonathanrabbi/Desktop/Data_Analysis_Immo/CSV_File_Accomodation/Cat_House_details.csv'
+data_file_path = '/Users/jonathanrabbi/Desktop/Data_Analysis_Immo/Data/Cat_House_details.csv'
 evaluate_xgboost_regression(data_file_path)
 evaluate_decisiontree_regression(data_file_path)
 evaluate_linear_regression(data_file_path)
