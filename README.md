@@ -1,6 +1,8 @@
 # Analysing the Belgian Housing Market
 
-<img src="https://cdn1.iconfinder.com/data/icons/real-estate-set-1/512/3-1024.png" width="200" class="center" height="200"/>
+<p align="center">
+<img src="https://cdn1.iconfinder.com/data/icons/real-estate-set-1/512/3-1024.png"/ width="200" height="200"/>
+</p>
 
 <h2 id="table-of-contents"> :book: Table of Contents</h2>
 <details open="open">
