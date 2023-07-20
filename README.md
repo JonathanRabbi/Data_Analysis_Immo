@@ -9,10 +9,10 @@
 <li><a href="#Goal of the Analysis"> ➤ Goal of The Analysis</a></li>
 <li><a href="#Requirements"> ➤ Requirements</a></li>
 <li><a href="#Dataset"> ➤ Dataset</a></li>
-<li><a href="#Descriptive Analysis"> ➤ Descriptive Analysis</a></li>
-<li><a href="#Prediction Modeling"> ➤ Prediction Modeling</a></li>
-<li><a href="#Example of Usage"> ➤ Example of Usage</a></li>
-<li><a href="#Time Schedule"> ➤ Time Schedule</a></li>
+<li><a href="#Descriptive-Analysis"> ➤ Descriptive Analysis</a></li>
+<li><a href="#Prediction-Modeling"> ➤ Prediction Modeling</a></li>
+<li><a href="#Example-of-Usage"> ➤ Example of Usage</a></li>
+<li><a href="#Time-Schedule"> ➤ Time Schedule</a></li>
 </ol>
 </details>
 
