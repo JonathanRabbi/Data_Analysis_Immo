@@ -1,12 +1,12 @@
 # Analysing the Belgian Housing Market
 
-<img src="https://cdn1.iconfinder.com/data/icons/real-estate-set-1/512/3-1024.png" width="200" class ="center" height="200" />
+<img src="https://cdn1.iconfinder.com/data/icons/real-estate-set-1/512/3-1024.png" width="200" class="center" height="200"/>
 
 <h2 id="table-of-contents"> :book: Table of Contents</h2>
 <details open="open">
   <summary>Table of Contents</summary>
 <ol>
-<li><a href="#Goal of the Analysis"> ➤ Goal of The Analysis</a></li>
+<li><a href="#Goal-of-the-Analysis"> ➤ Goal of The Analysis</a></li>
 <li><a href="#Requirements"> ➤ Requirements</a></li>
 <li><a href="#Dataset"> ➤ Dataset</a></li>
 <li><a href="#Descriptive-Analysis"> ➤ Descriptive Analysis</a></li>
