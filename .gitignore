@@ -4,6 +4,6 @@ Analysis_10K.ipynb
 
 CSV_Files/
 
-Regression/Random_Cat.ipynb
-Regression/XGBoost_House_2.ipynb
+src/Random_Cat.ipynb
+src/XGBoost_House_2.ipynb
 

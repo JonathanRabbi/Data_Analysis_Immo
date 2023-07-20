@@ -17,11 +17,11 @@ def evaluate_xgboost_regression(data_file_path):
 
     # Only taking data for houses and preparing etermining the feature and target
     df_House = df[df['Type of property'] == 'house']
-    X = df_House[['Bedrooms', 'Bathrooms', 'Toilets', 'Surface of the plot','Building_encoded']]
+    X = df_House[['Bedrooms', 'Bathrooms', 'Toilets', 'Surface of the plot']]
     y = df_House['Price']
 
     # Splitting the data to train and test sets 
-    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3,random_state=10)
+    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3,random_state=5)
 
     # creating and training the XGB regressor. Here the regression model has been fitted on training data
     xg_reg = XGBRegressor()
@@ -41,7 +41,7 @@ def evaluate_xgboost_regression(data_file_path):
     
     model = XGBRegressor(objective='reg:squarederror')
     scores = cross_val_score(model, X, y, scoring="neg_mean_squared_error", cv=10)
-    rmse_cv = np.sqrt(-scores)
+    #rmse_cv = np.sqrt(-scores)
     #print('XGBoost-Cross-validated RMSE: %0.2f' % rmse_cv.mean())
 
     # displaying the scores (R^2) of the model from trained data and test set.
@@ -54,10 +54,10 @@ def evaluate_decisiontree_regression(data_file_path):
     df=pd.read_csv(data_file_path)
 
     df_House = df[df['Type of property'] == 'house']
-    X = df_House[['Bedrooms', 'Bathrooms', 'Toilets', 'Surface of the plot','Building_encoded']]
+    X = df_House[['Bedrooms', 'Bathrooms', 'Toilets', 'Surface of the plot']]
     y = df_House['Price']
 
-    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3,random_state=10)
+    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3,random_state=5)
 
     reg_tree=DecisionTreeRegressor(criterion='squared_error',
                         max_depth=10,
@@ -83,10 +83,10 @@ def evaluate_linear_regression(data_file_path):
     df=pd.read_csv(data_file_path)
 
     df_House = df[df['Type of property'] == 'house']
-    X = df_House[['Bedrooms', 'Bathrooms', 'Toilets', 'Surface of the plot','Building_encoded']]
+    X = df_House[['Bedrooms', 'Bathrooms', 'Toilets', 'Surface of the plot']]
     y = df_House['Price']
 
-    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3,random_state=10)
+    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3,random_state=5)
 
     reg_linear= LinearRegression()
     reg_linear.fit(X_train,y_train)
