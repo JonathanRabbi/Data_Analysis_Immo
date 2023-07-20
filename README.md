@@ -39,6 +39,8 @@ Based on the extracted data, an more in depth review had been made, which can be
 ## Prediction Modeling
 To investigate whether the price of houses is influenced by sevral features, several regression models had been used. The variables  with the strongest correlation with the dependant variable *Price* were (*Bedrooms, Bathrooms, Toilets, Surface of Plots*). Hence, these features had been tested to see to what extent can these elements predict the changes in house prices.
 
+Ultimatley when running the three models, we can compare which model is most efficient in predicting the housing prices.
+
 ## Example of Usage
 __1. Download the dataset:__
 Download the csv file from the `Data`` folder which consists of the scraped and cleaned data from 
