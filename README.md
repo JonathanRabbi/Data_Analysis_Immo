@@ -5,9 +5,13 @@
 <h2 id="table-of-contents"> :book: Table of Contents</h2>
 <details open="open">
   <summary>Table of Contents</summary>
-  <ol>
-    <li><a href="#Goal-of-the-Analysis"> ➤ Goal of The Analysis</a></li>
-
+<ol>
+<li><a href="Goal of the Analysis"> ➤ Goal of The Analysis</a></li>
+<li><a href="Requirements"> ➤ Requirements</a></li>
+<li><a href="Dataset"> ➤ Dataset</a></li>
+<li><a href="Example of Usage"> ➤ Example of Usage</a></li>
+</ol>
+</details>
 
 ## Goal of The Analysis 
 The main idea behind analysing the Belgian housing market, is to grasp a better understanding of the main features that could be influencing the relative prices. After analysing the data at hand, a prediction analysis had been created based on several comparitive models, namely: linear and non-linear models.
@@ -26,7 +30,7 @@ The main idea behind analysing the Belgian housing market, is to grasp a better 
 ## Dataset
 
 
-## Example of usage
+## Example of Usage
 __1. Download the dataset:__
 Download the csv file from the `Data`` folder which consists of the scraped and cleaned data from 
 [Immoweb.be](https://www.immoweb.be/en/search/house/for-sale).
