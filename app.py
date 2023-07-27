@@ -1,6 +1,6 @@
 from fastapi import FastAPI, Path, HTTPException
 from pydantic import BaseModel
-from src.XGBoost_pred import evaluate_xgboost_regression
+from src.predict import evaluate_xgboost_regression
 
 app=FastAPI()
 
