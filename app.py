@@ -1,6 +1,6 @@
 from fastapi import FastAPI, Path, HTTPException
 from pydantic import BaseModel
-from predict import evaluate_xgboost_regression
+from src.predict import evaluate_xgboost_regression
 import uvicorn
 
 app=FastAPI()
@@ -25,10 +25,11 @@ def predict_house_price(data:House_feature):
     except ValueError: # if the user does not insert numbers
         raise HTTPException(status_code=400, detail="please insert numbers.")
     
-'''
+
 if __name__== '__app__':
     uvicorn.run(app,port=8000,host="0.0.0.0")
-'''
+
+
     
     
 

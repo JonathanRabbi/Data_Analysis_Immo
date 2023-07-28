@@ -14,6 +14,7 @@
 <li><a href="#Descriptive-Analysis"> ➤ Descriptive Analysis</a></li>
 <li><a href="#Prediction-Modeling"> ➤ Prediction Modeling</a></li>
 <li><a href="#Example-of-Usage"> ➤ Example of Usage</a></li>
+<li><a href="#Interactive API Documentation"> ➤ Interactive API Documentation</a></li>
 <li><a href="#Time-Schedule"> ➤ Time Schedule</a></li>
 </ol>
 </details>
@@ -31,6 +32,8 @@ The main idea behind analysing the Belgian housing market, is to grasp a better 
 > - Matplotlib
 > - Sklearn
 > - XGBoost
+> - Uvicorn
+> - FastApi
 
 ## Dataset
 The data collected was extracted from a Belgian real estate platform ([Immoweb.be](https://www.immoweb.be/en/search/house/for-sale)), which conglomerates many rental and selling units from real estate agencies.
@@ -54,12 +57,22 @@ Download the Pipeline_Regression file which can be found in the `src` folder. He
 __3. Running the script:__
 Lastly, you can run the script by running the main.py file, to view the results.
 
+## Interactive API Documentation
+<img src="assets/fastapi-logo.png" alt="fastapi-logo" height="60" />
+
+To create an interacive tool which presents the valuation of a house, FastApi was used to showcase the individual results (see below images as examples).
+
+![Alt text](<Screenshot 2023-07-28 at 14.23.38.png>)
+
+![Alt text](<Screenshot 2023-07-28 at 14.23.47.png>)
+
 ## Time Schedule
 
 This project took place between:
 
 - Data Exploration: 10/07/2023-14/07/2023
 - Prediction Modeling: 17/07/2023-20/07/2023
+- FastApi: 26/07/2023-28/07/2023
 
 
 
