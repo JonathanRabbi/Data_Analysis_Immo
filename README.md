@@ -58,7 +58,7 @@ __3. Running the script:__
 Lastly, you can run the script by running the main.py file, to view the results.
 
 ## Interactive API Documentation
-<img src="image.png" width=250 height=100>
+<img src="/Users/jonathanrabbi/Desktop/Data_Analysis_Immo/Descriptive_Analysis/Visuals/image.png" width=250 height=100>
 
 To create an interacive tool which presents the valuation of a house, `FastApi` was used to showcase the individual results (see below images as examples).
 
