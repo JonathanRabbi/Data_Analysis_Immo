@@ -62,9 +62,9 @@ Lastly, you can run the script by running the main.py file, to view the results.
 
 To create an interacive tool which presents the valuation of a house, `FastApi` was used to showcase the individual results (see below images as examples).
 
-![Screenshot 1.](<Images/Screenshot 2023-07-28 at 14.23.38.png>)
+![Screenshot 1.](<Images/screenhot_1.png>)
 
-![Screenshot 2.](<Images/Screenshot 2023-07-28 at 14.23.47.png>)
+![Screenshot 2.](<Images/screenshot_2.png>)
 
 ### Steps to Follow
 1. Run the code within the app.py file by means of the uvicorn library.
