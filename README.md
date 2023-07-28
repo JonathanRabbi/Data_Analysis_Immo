@@ -58,13 +58,31 @@ __3. Running the script:__
 Lastly, you can run the script by running the main.py file, to view the results.
 
 ## Interactive API Documentation
-<img src="assets/fastapi-logo.png" alt="fastapi-logo" height="60" />
+<img src="image.png" width=250 height=100>
 
-To create an interacive tool which presents the valuation of a house, FastApi was used to showcase the individual results (see below images as examples).
+To create an interacive tool which presents the valuation of a house, `FastApi` was used to showcase the individual results (see below images as examples).
 
 ![Alt text](<Screenshot 2023-07-28 at 14.23.38.png>)
 
 ![Alt text](<Screenshot 2023-07-28 at 14.23.47.png>)
+
+### Steps to Follow
+1. Run the code within the app.py file by means of the uvicorn library.
+
+```bash 
+uvicorn app:app --reload
+```
+2. In the Dockerfile, continue to build the corresponding image of the FastApi for compatability on other devices.
+
+```bash
+docker build -t fastapi . 
+```
+
+3. Run the corresponding image.
+
+```bash
+docker run -p 8000:8000 python-fastapi
+```
 
 ## Time Schedule
 
